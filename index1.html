@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shloka</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar unselectable">
+        <ul>
+            <li onclick="navClick('1')">Shloka-1</li>
+            <li onclick="navClick('2')">Shloka-2</li>
+            <li onclick="navClick('3')">Shloka-3</li>
+            <li onclick="navClick('4')">Shloka-4</li>
+            <li onclick="navClick('5')">Shloka-5</li>
+            <li onclick="navClick('6')">Shloka-6</li>
+            <li onclick="navClick('7')">Shloka-7</li>
+            <li onclick="navClick('8')">Shloka-8</li>
+            <li onclick="navClick('9')">Shloka-9</li>
+            <li onclick="navClick('10')">Shloka-10</li>
+        </ul>
+    </div>
+    <div class="container">
+    <div class="wallpaper"></div>
+    <div class="shloka1">
+        <p class="shloka-box" id="shloka-box">
+            अगजानन-पद्माकं गजाननम्-अहर्निशम्।<br>
+            अनेकदंतं भक्तानाम् एकदन्तम्-उपास्महे ॥१॥
+        </p>
+        <audio id="audPlayer" controls>
+            <source src="https://firebasestorage.googleapis.com/v0/b/shloka070.appspot.com/o/Shloka-1.mp3?alt=media&token=59eaedbe-9c65-4d9c-85a9-a10bd596f397" type="audio/mpeg"> 
+        </audio>
+        <div class="buttons">
+        <button onclick="changeText('1')">Telugu</button>
+        <button onclick="changeText1('2')">English</button>
+        <button onclick="changeText2('3')">Malayalam</button>
+    </div>
+    </div>
+    </div>
+</body>
+<script type="module" src="script.js"></script>
+</html>
