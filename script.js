@@ -18,7 +18,7 @@ const firebaseConfig = {
 };
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
-
+//-------------------------------/Fetching Data/-------------------------------
 function fetchTranslation(shlokaNum= window.currentShlokaNum || 1, languageKey) {
   const tranRef = ref(
     database,
@@ -36,18 +36,14 @@ function fetchTranslation(shlokaNum= window.currentShlokaNum || 1, languageKey) 
       console.log("Error translating.", error);
     });
 }
-//   ----------------------/Database Integration End/-----------------------
+//----------------------/Database Integration End/-----------------------
 
 window.changeText = function (languageKey) {
   fetchTranslation(window.currentShlokaNum, languageKey);
 };
-window.changeText1 = function (languageKey) {
-  fetchTranslation(window.currentShlokaNum, languageKey);
-};
-window.changeText2 = function (languageKey) {
-  fetchTranslation(window.currentShlokaNum, languageKey);
-};
 
+
+//-----------------------------/Onclick functions/-----------------------------
 window.navClick = async function (shlokaNumber) {
   window.currentShlokaNum = shlokaNumber;
   const mainRef = ref(database, `Shloka-${shlokaNumber}/main`);
