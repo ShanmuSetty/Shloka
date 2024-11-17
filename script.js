@@ -7,7 +7,6 @@ import {
   get,
 } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-database.js";
 const firebaseConfig = {
-  apiKey: `$(process.env.API_KEY)`,
   authDomain: "shloka070.firebaseapp.com",
   databaseURL: "https://shloka070-default-rtdb.firebaseio.com",
   projectId: "shloka070",
